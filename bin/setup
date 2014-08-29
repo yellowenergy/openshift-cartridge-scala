@@ -3,16 +3,19 @@ set -e
 
 VERSION=2.11.2
 SBT_VERSION=0.13.5
+OPENSHIFT_DATA_DIR=/Users/juanpedromoreno/Documents/workspace/pocs/data_delete
 
 cd ${OPENSHIFT_DATA_DIR}
 
 echo "Download scala $VERSION"
 curl -s -o ${OPENSHIFT_DATA_DIR}/scala-$VERSION.tgz http://downloads.typesafe.com/scala/$VERSION/scala-$VERSION.tgz 
+cd ${OPENSHIFT_DATA_DIR}
 tar xzf scala-$VERSION.tgz
 rm -f scala-$VERSION.tgz
 ln -s ${OPENSHIFT_DATA_DIR}/scala-$VERSION scala
 
 echo "Download sbt $SBT_VERSION"
-curl -s -o  ${OPENSHIFT_DATA_DIR}/sbt.tgz http://dl.bintray.com/sbt/native-packages/sbt/$SBT_VERSION/sbt-$SBT_VERSION.tgz
-tar xzf sbt.tgz
+curl -s -o ${OPENSHIFT_DATA_DIR}/sbt.tgz http://dl.bintray.com/sbt/native-packages/sbt/${SBT_VERSION}/#sbt-${SBT_VERSION}.tgz
+cd ${OPENSHIFT_DATA_DIR}
+tar zxvf sbt.tgz
 rm -f xzf sbt.tgz
