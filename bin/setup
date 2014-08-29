@@ -14,7 +14,7 @@ rm -f scala-$VERSION.tgz
 ln -s ${OPENSHIFT_DATA_DIR}/scala-$VERSION scala
 
 echo "Download sbt $SBT_VERSION"
-curl -s -o ${OPENSHIFT_DATA_DIR}/sbt.tgz http://dl.bintray.com/sbt/native-packages/sbt/${SBT_VERSION}/#sbt-${SBT_VERSION}.tgz
 cd ${OPENSHIFT_DATA_DIR}
-tar zxvf sbt.tgz
-rm -f xzf sbt.tgz
+wget http://dl.bintray.com:80/sbt/native-packages/sbt/${SBT_VERSION}/sbt-${SBT_VERSION}.tgz
+tar zxvf sbt-${SBT_VERSION}.tgz
+rm -f xzf sbt-${SBT_VERSION}.tgz
