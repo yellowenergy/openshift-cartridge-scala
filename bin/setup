@@ -3,7 +3,6 @@ set -e
 
 VERSION=2.11.2
 SBT_VERSION=0.13.5
-OPENSHIFT_DATA_DIR=/Users/juanpedromoreno/Documents/workspace/pocs/data_delete
 
 cd ${OPENSHIFT_DATA_DIR}
 
