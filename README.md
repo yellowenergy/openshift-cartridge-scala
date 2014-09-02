@@ -22,5 +22,5 @@ In your application listen on the environment variable $OPENSHIFT_SCALA_IP:$OPEN
     interface = System.getenv("OPENSHIFT_SCALA_IP")
     port = System.getenv("OPENSHIFT_SCALA_PORT").toInt
 
-This cartidge embed a [spray](https://github.com/spray/spray-template) example, but you could use any framework as long as sbt is used for compilation.
+This cartridge embed a [Akka persistence event sourcing](https://github.com/ScalaConsultants/akka-persistence-eventsourcing) example, but you could use any framework as long as sbt is used for compilation.
 
