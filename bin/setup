@@ -3,6 +3,7 @@ set -e
 
 VERSION=2.11.2
 SBT_VERSION=0.13.5
+ACTIVATOR_VERSION=1.2.10
 
 cd ${OPENSHIFT_DATA_DIR}
 
@@ -18,3 +19,10 @@ cd ${OPENSHIFT_DATA_DIR}
 curl -L -o ${OPENSHIFT_DATA_DIR}/sbt.tgz -O http://dl.bintray.com:80/sbt/native-packages/sbt/${SBT_VERSION}/sbt-${SBT_VERSION}.tgz
 tar zxvf sbt.tgz
 rm -f xzf sbt.tgz
+
+echo "Download activator $ACTIVATOR_VERSION"
+cd ${OPENSHIFT_DATA_DIR}
+curl http://downloads.typesafe.com/typesafe-activator/${ACTIVATOR_VERSION}/typesafe-activator-${ACTIVATOR_VERSION}.zip > activator.zip
+unzip activator.zip
+rm activator.zip
+ln -s ${OPENSHIFT_DATA_DIR}/activator-${ACTIVATOR_VERSION} ${OPENSHIFT_DATA_DIR}/activator
