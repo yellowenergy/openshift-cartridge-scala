@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sbt re-start
+${OPENSHIFT_DATA_DIR}/sbt/bin/sbt re-start

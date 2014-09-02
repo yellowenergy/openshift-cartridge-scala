@@ -18,3 +18,4 @@ cd ${OPENSHIFT_DATA_DIR}
 curl -L -o ${OPENSHIFT_DATA_DIR}/sbt.tgz -O http://dl.bintray.com:80/sbt/native-packages/sbt/${SBT_VERSION}/sbt-${SBT_VERSION}.tgz
 tar zxvf sbt.tgz
 rm -f xzf sbt.tgz
+cd ..
