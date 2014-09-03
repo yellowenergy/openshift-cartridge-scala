@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-PATH=${OPENSHIFT_DATA_DIR}/scala/bin/:${OPENSHIFT_DATA_DIR}/sbt/bin/:/bin/:/usr/bin:$PATH
+PATH=${OPENSHIFT_DATA_DIR}/scala/bin/:${OPENSHIFT_DATA_DIR}/sbt/bin/:/bin/:/usr/bin:$PATH:${OPENSHIFT_DATA_DIR}/activator/activator/:
 
 function start {
     cd $OPENSHIFT_REPO_DIR
