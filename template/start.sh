@@ -1,3 +1,3 @@
 #!/bin/bash
 
-activator run
+${OPENSHIFT_DATA_DIR}/activator run
