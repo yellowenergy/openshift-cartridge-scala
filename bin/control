@@ -4,7 +4,7 @@ PATH=$PATH:${OPENSHIFT_DATA_DIR}/scala/bin/:${OPENSHIFT_DATA_DIR}/sbt/bin/:/bin/
 
 function start {
     cd $OPENSHIFT_REPO_DIR
-    nohup ./start.sh >> $OPENSHIFT_SCALA_LOG_DIR/scala.log 2>&1  &
+    ./start.sh
 }
 
 function stop {
