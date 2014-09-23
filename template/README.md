@@ -3,7 +3,6 @@
 SBT template project for quickly getting started with spray-server 
 http://spray.io
 
-This is [spray-template](https://github.com/spray/spray-template) inline link.
-
+This is the original github repo [spray-template](https://github.com/spray/spray-template).
 
 Learn more at [spray.io](http://www.spray.io)
