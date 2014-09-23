@@ -18,7 +18,7 @@ That's all! You only must wait for the deploy is completed ;)
 Deployment can be sometimes a slowly process. Be patient with that. You could deployment process with next command:
 
 ```bash
- ssh id_to_replace@demoreactiveapp-subdomain.rhcloud.com "tail -f scala/logs/scala.log"
+ ssh id_to_replace@demoreactiveapp-$yournamespace.rhcloud.com "tail -f scala/logs/scala.log"
  ```
 
 ## Deploy process
