@@ -1,4 +1,4 @@
-# OpenShift Cartridge for deploy Reactive Applications
+# OpenShift Cartridge to deploy Reactive Applications
 
 With this cartridge you can easily deploy Scala, Spray, Play and Akka applications, or any SBT based applications, on the [Openshift PaaS](https://www.openshift.com/).
 
