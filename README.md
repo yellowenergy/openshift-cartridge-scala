@@ -8,7 +8,7 @@ Openshift environment:
 
 ```bash
 rhc app create demoreactiveapp \
-http://cartreflect-claytondev.rhcloud.com/reflect?github=47deg/openshift-cartridge-scala
+http://cartreflect-claytondev.rhcloud.com/reflect?github=yellowenergy/openshift-cartridge-scala
 ```
 
 That's all! Now all that is left is to wait for the deployment to complete ;)
