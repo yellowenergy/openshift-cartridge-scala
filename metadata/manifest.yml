@@ -3,6 +3,7 @@ Cartridge-Short-Name: SCALA
 Display-Name: scala Cartridge
 Description: "A scala cartridge"
 Version: '1.0.0'
+Website: https://github.com/yellowenergy/openshift-cartridge-scala
 License: "MIT"
 Vendor: google
 Cartridge-Version: 0.0.1
